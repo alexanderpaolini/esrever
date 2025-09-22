@@ -8,6 +8,7 @@ OUTPUT_FILE="test_files/out1.bin"
 
 rm -f "$OUTPUT_FILE" 2>/dev/null
 
+# standard reverse
 echo -n -e '\x01\x02\x03\x04\x05\x06\x07\x08' > "$TEST_FILE"
 echo -n -e '\x04\x03\x02\x01\x08\x07\x06\x05' > "$EXPECTED_FILE"
 
