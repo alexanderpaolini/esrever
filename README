@@ -1,0 +1,24 @@
+# Reverse
+
+```txt
+$ reverse file [options]
+```
+
+Reverse is a CLI tool to swap the "endianness" of a given input file.
+
+## Example Usage
+
+Reverse in groups of 8 bytes. Debug mode enabled.
+
+```txt
+$ reverse bin/reverse -d --size=8
+write to 'esrever' [y/n]: y
+done
+```
+
+Reverse in groups of 4. Write to 'out.bin'
+
+```txt
+$ reverse bin/reverse --out=out.bin
+done
+```
